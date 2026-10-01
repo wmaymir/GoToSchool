@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6852458864929728688}
   m_Layer: 0
   m_Name: Green Block
-  m_TagString: Block
+  m_TagString: GreenBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
