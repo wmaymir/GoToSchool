@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 3
   tags:
   - Anchor
+  - Block
+  - GreenBlock
+  - BlueBlock
+  - RedBlock
+  - Keypad
   layers:
   - Default
   - TransparentFX
