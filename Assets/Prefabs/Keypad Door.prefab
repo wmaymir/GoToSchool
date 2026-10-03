@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7057363603421286094
+--- !u!1 &205511734589866756
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,50 +8,49 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6733654940677178351}
-  - component: {fileID: 2080382619207461267}
-  - component: {fileID: 1044904801634767909}
-  - component: {fileID: 7004888167059995752}
-  - component: {fileID: 2812186946984130201}
-  - component: {fileID: 2556433900957515501}
+  - component: {fileID: 2242516292331417458}
+  - component: {fileID: 7856014972704401977}
+  - component: {fileID: 4751148264351220828}
+  - component: {fileID: 2836081403203902514}
+  - component: {fileID: 3034150746018690492}
   m_Layer: 0
-  m_Name: Pressure Plate Door
+  m_Name: Keypad Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6733654940677178351
+--- !u!4 &2242516292331417458
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7057363603421286094}
+  m_GameObject: {fileID: 205511734589866756}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 1.5, z: 13}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 8, y: 1.5, z: 1.3}
   m_LocalScale: {x: 2, y: 3, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5517528211672167120}
+  - {fileID: 4731699858257957295}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &2080382619207461267
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!33 &7856014972704401977
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7057363603421286094}
+  m_GameObject: {fileID: 205511734589866756}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &1044904801634767909
+--- !u!23 &4751148264351220828
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7057363603421286094}
+  m_GameObject: {fileID: 205511734589866756}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -94,13 +93,13 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7004888167059995752
+--- !u!65 &2836081403203902514
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7057363603421286094}
+  m_GameObject: {fileID: 205511734589866756}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -115,30 +114,13 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2812186946984130201
+--- !u!114 &3034150746018690492
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7057363603421286094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 383aee2799cc1c74bb99e8d9f7ad1dd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PressurePlateDoor
-  pressurePlates:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  doorOpenScript: {fileID: 2556433900957515501}
---- !u!114 &2556433900957515501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7057363603421286094}
+  m_GameObject: {fileID: 205511734589866756}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6664574c538d3984685385b9c1f01573, type: 3}
@@ -147,7 +129,7 @@ MonoBehaviour:
   openAngle: 90
   openSpeed: 2
   isOpen: 0
---- !u!1 &9189339785216123717
+--- !u!1 &6486585386641445556
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -155,7 +137,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5517528211672167120}
+  - component: {fileID: 4731699858257957295}
   m_Layer: 0
   m_Name: Hinge
   m_TagString: Untagged
@@ -163,18 +145,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5517528211672167120
+--- !u!4 &4731699858257957295
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9189339785216123717}
+  m_GameObject: {fileID: 6486585386641445556}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5, y: 0, z: 0}
+  m_LocalPosition: {x: 0.5, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6733654940677178351}
+  m_Father: {fileID: 2242516292331417458}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

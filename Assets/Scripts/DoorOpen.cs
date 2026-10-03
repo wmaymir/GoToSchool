@@ -1,3 +1,4 @@
+using Unity.XR.CoreUtils;
 using UnityEngine;
 
 public class DoorOpen : MonoBehaviour
@@ -21,7 +22,7 @@ public class DoorOpen : MonoBehaviour
 
         if (hinge == Vector3.zero)
         {
-            hinge = transform.position + new Vector3(-1, 0, 0);
+            hinge = gameObject.GetNamedChild("Hinge").transform.position;
         }
     }
 

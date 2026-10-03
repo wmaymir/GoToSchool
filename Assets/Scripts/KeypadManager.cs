@@ -1,11 +1,13 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class KeypadManager : MonoBehaviour
 {
     [SerializeField] private string correctCode = "1234"; // The correct code to unlock
     private string enteredCode = ""; // The code entered by the user
+    public UnityEvent CorrectCodeEntered; // Event triggered when the correct code is entered
 
     public void EnterDigit(int digit)
     {
@@ -21,7 +23,7 @@ public class KeypadManager : MonoBehaviour
         if (enteredCode == correctCode) // Check if the entered code matches the correct code
         {
             Debug.Log("Correct Code Entered!"); // Log success message
-            // Add logic to unlock or perform an action here
+            CorrectCodeEntered.Invoke(); // Trigger the event for correct code
         }
         else
         {

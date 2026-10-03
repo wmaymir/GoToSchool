@@ -431,6 +431,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1628258664987138688, guid: e5f233ceb20951c4f93e4fe938f41941, type: 3}
   m_PrefabInstance: {fileID: 2021445134}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1038439563 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3034150746018690492, guid: 630592a78a1345747987f7eab4ef0a40, type: 3}
+  m_PrefabInstance: {fileID: 3091896894481608537}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6664574c538d3984685385b9c1f01573, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DoorOpen
 --- !u!1001 &1147861325
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -940,7 +951,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3758453547266834909, guid: 8906da8784a0e6f4182b567fc9ba0887, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3758453547266834909, guid: 8906da8784a0e6f4182b567fc9ba0887, type: 3}
       propertyPath: m_LocalPosition.z
@@ -974,15 +985,100 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6409534378886882958, guid: 8906da8784a0e6f4182b567fc9ba0887, type: 3}
+      propertyPath: CorrectCodeEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409534378886882958, guid: 8906da8784a0e6f4182b567fc9ba0887, type: 3}
+      propertyPath: CorrectCodeEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409534378886882958, guid: 8906da8784a0e6f4182b567fc9ba0887, type: 3}
+      propertyPath: CorrectCodeEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1038439563}
+    - target: {fileID: 6409534378886882958, guid: 8906da8784a0e6f4182b567fc9ba0887, type: 3}
+      propertyPath: CorrectCodeEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409534378886882958, guid: 8906da8784a0e6f4182b567fc9ba0887, type: 3}
+      propertyPath: CorrectCodeEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OpenDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409534378886882958, guid: 8906da8784a0e6f4182b567fc9ba0887, type: 3}
+      propertyPath: CorrectCodeEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DoorOpen, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409534378886882958, guid: 8906da8784a0e6f4182b567fc9ba0887, type: 3}
+      propertyPath: CorrectCodeEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6499228942534937140, guid: 8906da8784a0e6f4182b567fc9ba0887, type: 3}
       propertyPath: m_Name
-      value: KeypadManager
+      value: Keypad Manager
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8906da8784a0e6f4182b567fc9ba0887, type: 3}
+--- !u!1001 &3091896894481608537
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 205511734589866756, guid: 630592a78a1345747987f7eab4ef0a40, type: 3}
+      propertyPath: m_Name
+      value: Keypad Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 2242516292331417458, guid: 630592a78a1345747987f7eab4ef0a40, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2242516292331417458, guid: 630592a78a1345747987f7eab4ef0a40, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2242516292331417458, guid: 630592a78a1345747987f7eab4ef0a40, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2242516292331417458, guid: 630592a78a1345747987f7eab4ef0a40, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2242516292331417458, guid: 630592a78a1345747987f7eab4ef0a40, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2242516292331417458, guid: 630592a78a1345747987f7eab4ef0a40, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2242516292331417458, guid: 630592a78a1345747987f7eab4ef0a40, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2242516292331417458, guid: 630592a78a1345747987f7eab4ef0a40, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2242516292331417458, guid: 630592a78a1345747987f7eab4ef0a40, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2242516292331417458, guid: 630592a78a1345747987f7eab4ef0a40, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 630592a78a1345747987f7eab4ef0a40, type: 3}
 --- !u!1001 &5421928440813891015
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1195,3 +1291,4 @@ SceneRoots:
   - {fileID: 2021445134}
   - {fileID: 6825607143914239297}
   - {fileID: 1038475412314932936}
+  - {fileID: 3091896894481608537}

@@ -1305,7 +1305,7 @@ GameObject:
   - component: {fileID: 3758453547266834909}
   - component: {fileID: 6409534378886882958}
   m_Layer: 0
-  m_Name: KeypadManager
+  m_Name: Keypad Manager
   m_TagString: Keypad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
