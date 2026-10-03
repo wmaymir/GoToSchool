@@ -13,7 +13,6 @@ public class ButtonPress : MonoBehaviour
 
     [Header("Events")]
     public UnityEvent<int> OnPressed; // Event triggered when the button is pressed
-    public UnityEvent<int> OnReleased; // Event triggered when the button is released
 
     private Vector3 initialPosition; // Initial position of the button
     private Vector3 pressedPosition; // Position of the button when pressed
@@ -59,7 +58,6 @@ public class ButtonPress : MonoBehaviour
         else if (currentDistance < pressDistance && isPressed) // Check if the button is released
         {
             isPressed = false; // Update the state to released
-            OnReleased.Invoke(buttonNumber); // Trigger the OnReleased event
             Debug.Log("Button " + buttonNumber + " Released!"); // Log the button release event
         }
 

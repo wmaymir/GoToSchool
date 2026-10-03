@@ -44,23 +44,4 @@ public class KeypadManager : MonoBehaviour
     {
         return enteredCode; // Return the current entered code
     }
-
-    public void InputBuffer(float time)
-    {
-        StartCoroutine(InputBufferCoroutine(time)); // Start the input buffer coroutine
-    }
-
-    private void StartCoroutine(IEnumerable enumerable)
-    {
-        throw new NotImplementedException();
-    }
-
-    IEnumerable InputBufferCoroutine(float time)
-    {
-        Debug.Log("Input Buffer Started. Disabling input for " + time + " seconds."); // Log input buffer start
-        // Disable input here (e.g., disable button interactions)
-        yield return new WaitForSeconds(time); // Wait for the specified time
-        Debug.Log("Input Buffer Ended. Re-enabling input."); // Log input buffer end
-        // Re-enable input here (e.g., enable button interactions)
-    }
 }
