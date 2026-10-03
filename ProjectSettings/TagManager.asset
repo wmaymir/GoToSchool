@@ -9,6 +9,7 @@ TagManager:
   - GreenBlock
   - BlueBlock
   - RedBlock
+  - Keypad
   layers:
   - Default
   - TransparentFX
