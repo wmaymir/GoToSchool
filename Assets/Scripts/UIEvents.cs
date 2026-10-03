@@ -7,27 +7,36 @@ public class UIEvents : MonoBehaviour
 {
 
     [SerializeField]
-    private GameObject LoadingText;
-    private AudioListener Listener;
+    public GameObject LoadingText;
+    public AudioListener Listener;
 
     bool muted = false;
 
+    private void Start()
+    {
+        //makes sure scene doesn't load paused if accesed via the options screen
+        if (Time.timeScale != 1)
+        {
+            Time.timeScale = 1;
+        }
+    }
+
     public void OnPlayButtonClicked()
     {
-        //Debug.Log("Play button was clicked.");
+        Debug.Log("Play button was clicked.");
         LoadingText.SetActive(true);
         SceneManager.LoadSceneAsync("Level1");
     }
 
     public void OnQuitButtonClicked()
     {
-        //Debug.Log("Quit button was clicked.");
+        Debug.Log("Quit button was clicked.");
         Application.Quit();
     }
 
     public void OnMuteButtonClicked()
     {
-        //Debug.Log("Mute button was clicked.");
+        Debug.Log("Mute button was clicked.");
         if (!muted)
         {
             muted = true;
@@ -42,7 +51,7 @@ public class UIEvents : MonoBehaviour
 
     public void OnTitleButtonClicked()
     {
-        //Debug.Log("Title button was clicked.");
+        Debug.Log("Title button was clicked.");
         SceneManager.LoadSceneAsync("Title");
     }
 
