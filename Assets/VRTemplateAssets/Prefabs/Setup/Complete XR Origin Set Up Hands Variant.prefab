@@ -364,7 +364,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8557446241134112349, guid: b5b19c15f2a610a48be0e49a6a149dad, type: 3}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UIEvents, Assembly-CSharp
         m_MethodName: OnTitleButtonClicked
         m_Mode: 1
@@ -634,7 +634,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8557446241134112349, guid: b5b19c15f2a610a48be0e49a6a149dad, type: 3}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UIEvents, Assembly-CSharp
         m_MethodName: OnMuteButtonClicked
         m_Mode: 1
