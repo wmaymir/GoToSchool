@@ -4,21 +4,23 @@ using UnityEngine.InputSystem;
 public class CallPlayerOptions : MonoBehaviour
 {
 
+    //Google Gemini helped Westin in writing part of this script
+
     private bool optionsOn = false;
 
     [SerializeField]
     public GameObject PlayerOptionsCanvas;
 
-    [SerializeField] private InputActionReference menuActionReference;
+    [SerializeField] private InputActionReference customActionReference;
 
     private void OnEnable()
     {
-        menuActionReference.action.performed += OnButtonPressed;
+        customActionReference.action.performed += OnButtonPressed;
     }
 
     private void OnDisable()
     {
-        menuActionReference.action.performed -= OnButtonPressed;
+        customActionReference.action.performed -= OnButtonPressed;
     }
 
     private void OnButtonPressed(InputAction.CallbackContext context)
