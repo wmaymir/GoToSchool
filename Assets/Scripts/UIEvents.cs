@@ -25,7 +25,7 @@ public class UIEvents : MonoBehaviour
     {
         Debug.Log("Play button was clicked.");
         LoadingText.SetActive(true);
-        SceneManager.LoadSceneAsync("Level1");
+        SceneManager.LoadSceneAsync("EnvironmentScene");
     }
 
     public void OnQuitButtonClicked()
