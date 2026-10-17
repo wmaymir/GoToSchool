@@ -23,13 +23,13 @@ public class ButtonPress : MonoBehaviour
     void Start()
     {
         initialPosition = transform.localPosition; // Store the initial position of the button
-        Debug.Log("Button initial position: " + initialPosition); // Log the initial position for debugging
+        //Debug.Log("Button initial position: " + initialPosition); // Log the initial position for debugging
 
         pressedPosition = (-transform.forward * pressDistance) + initialPosition; // Calculate the pressed position based on the facing direction and press distance
-        Debug.Log("Pressed button position is: " + pressedPosition); // Log the facing direction for debugging)
+        //Debug.Log("Pressed button position is: " + pressedPosition); // Log the facing direction for debugging)
 
         maxPressedPosition = (-transform.forward * maxPressDistance) + initialPosition; // Calculate the maximum pressed position based on the facing direction and max press distance
-        Debug.Log("Max pressed button position is: " + maxPressedPosition); // Log the facing direction for debugging
+        //Debug.Log("Max pressed button position is: " + maxPressedPosition); // Log the facing direction for debugging
 
         LockRigidBody(GetFacingDirection()); // Lock the Rigidbody constraints based on the facing direction of the button
 
