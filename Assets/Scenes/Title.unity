@@ -982,7 +982,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1411084342351021268, guid: 18176ad6add703a48ba511a7d97d5c68, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1923508371}
   m_SourcePrefab: {fileID: 100100000, guid: 18176ad6add703a48ba511a7d97d5c68, type: 3}
 --- !u!1 &1122847892
 GameObject:
@@ -1370,6 +1373,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1617727452}
   m_CullTransparentMesh: 1
+--- !u!1 &1923508370 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1411084342351021268, guid: 18176ad6add703a48ba511a7d97d5c68, type: 3}
+  m_PrefabInstance: {fileID: 821672870}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1923508371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923508370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6c3073332f74f647a07437465059144, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HeadMotionEffects
+  head: {fileID: 0}
+  volume: {fileID: 0}
+  linearThreshold: 2.5
+  angularThreshold: 250
+  maxIntensity: 0.4
+  fadeInSpeed: 8
+  fadeOutSpeed: 3
+  holdDuration: 0.15
 --- !u!114 &1952788455 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6100329202119601189, guid: 18176ad6add703a48ba511a7d97d5c68, type: 3}
