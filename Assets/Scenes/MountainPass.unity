@@ -222,8 +222,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The highest mountain peak in North America is in the USA! This is the peak
-    of Mount Denali. It's in the Alaska Range, towering 20,310 feet in elevation.
+  m_text: The highest mountain peak in North America is in the USA, on Mount Denali.
+    It's in the Alaska Range, towering 20,310 feet in elevation.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 039026746cd6dbb4696f85aafc3b4a14, type: 2}
   m_sharedMaterial: {fileID: -5731374170002601279, guid: 039026746cd6dbb4696f85aafc3b4a14, type: 2}
