@@ -18,8 +18,8 @@ EditorBuildSettings:
     path: Assets/Scenes/MountainPass.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Scenes/School.unity
-    guid: 98d743cc7a6b25e45beedca3b6ad365a
+    path: Assets/Scenes/SchoolScene.unity
+    guid: 997b02adc1455cd4b961490b4e1b1131
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: dc5a169419fa04987b057f65238cf3ba, type: 2}
